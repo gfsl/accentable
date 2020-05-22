@@ -1,6 +1,6 @@
 ﻿;
 ; Mimic MS Word accent chord behaviour globally
-; graeme.lennon@gmail.com
+; https://github.com/gfsl/accentable
 ;
 ; ---
 ;
@@ -16,7 +16,7 @@ Menu, Tray, Tip, %AppName%
 Menu, Tray, Add, Enabled, ToggleEnable
 Menu, Tray, Check, Enabled
 if !A_IsCompiled {
-	Menu, Tray, Icon, AccentHelper.ico
+	Menu, Tray, Icon, Accentable.ico
 	Menu, Tray, Add, &Reload Script, ReloadScript
 }
 Menu, Tray, Add, &Help, HelpMenu
@@ -45,6 +45,7 @@ For example, Ctrl+^, o produces ô.
 Accents supported are grave ( `` ), acute ( ' ), circumflex ( ^ ), umlaut ( : ), tilde ( ~ ) and cedilla ( , ).
 
 Version: %Version%
+https://github.com/gfsl/accentable
 )
 return
 
