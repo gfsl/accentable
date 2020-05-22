@@ -1,6 +1,10 @@
 # accentable
 Accentable is an AutoHotKey helper for using chords to make accents, based on how such shortcuts work in Microsoft Office.
 
+Download the latest version here on the [Releases page](https://github.com/gfsl/accentable/releases).
+
+Or you can run from the `.ahk` script with [AutoHotKey](https://www.autohotkey.com/) installed.
+
 All shortcuts are in the format Ctrl+Accent, release, Letter.
 For example, Ctrl+^, o produces ô.
 
