@@ -139,7 +139,7 @@ return
 		case "e": SendInput ë
 		case "i": SendInput ï
 		case "o": SendInput ö
-		case "u": SendInput ï
+		case "u": SendInput ü
 		case "y": SendInput ÿ
 	}
 return
