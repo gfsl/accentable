@@ -4,6 +4,11 @@
 ;
 ; ---
 ;
+; 1.00 - Initial release.
+; 1.10 - Change to using direct Unicode input because Asc codes were
+;        breaking things in some browsers.
+;
+; ---
 
 AppName = Accentable
 Version = 1.00
@@ -68,16 +73,16 @@ return
 	Input, key, L1 T1
 	switch key
 	{
-		case "A": SendInput, {Asc 0192}
-		case "E": SendInput, {Asc 0200}
-		case "I": SendInput, {Asc 0204}
-		case "O": SendInput, {Asc 0210}
-		case "U": SendInput, {Asc 0217}
-		case "a": SendInput, {Asc 0224}
-		case "e": SendInput, {Asc 0232}
-		case "i": SendInput, {Asc 0236}
-		case "o": SendInput, {Asc 0242}
-		case "u": SendInput, {Asc 0249}
+		case "A": SendInput À
+		case "E": SendInput È
+		case "I": SendInput Ì
+		case "O": SendInput Ò
+		case "U": SendInput Ù
+		case "a": SendInput à
+		case "e": SendInput è
+		case "i": SendInput i
+		case "o": SendInput ò
+		case "u": SendInput ù
 	}
 return
 
@@ -86,18 +91,18 @@ return
 	Input, key, L1 T1
 	switch key
 	{
-		case "A": SendInput, {Asc 0193}
-		case "E": SendInput, {Asc 0201}
-		case "I": SendInput, {Asc 0205}
-		case "O": SendInput, {Asc 0211}
-		case "U": SendInput, {Asc 0218}
-		case "Y": SendInput, {Asc 0221}
-		case "a": SendInput, {Asc 0225}
-		case "e": SendInput, {Asc 0233}
-		case "i": SendInput, {Asc 0237}
-		case "o": SendInput, {Asc 0243}
-		case "u": SendInput, {Asc 0250}
-		case "y": SendInput, {Asc 0253}
+		case "A": SendInput Á
+		case "E": SendInput É
+		case "I": SendInput Í
+		case "O": SendInput Ó
+		case "U": SendInput Ú
+		case "Y": SendInput Ý
+		case "a": SendInput á
+		case "e": SendInput é
+		case "i": SendInput í
+		case "o": SendInput ó
+		case "u": SendInput ú
+		case "y": SendInput ý
 	}
 return
 
@@ -106,16 +111,16 @@ return
 	Input, key, L1 T1
 	switch key
 	{
-		case "A": SendInput, {Asc 0194}
-		case "E": SendInput, {Asc 0202}
-		case "I": SendInput, {Asc 0206}
-		case "O": SendInput, {Asc 0212}
-		case "U": SendInput, {Asc 0219}
-		case "a": SendInput, {Asc 0226}
-		case "e": SendInput, {Asc 0234}
-		case "i": SendInput, {Asc 0238}
-		case "o": SendInput, {Asc 0244}
-		case "u": SendInput, {Asc 0251}
+		case "A": SendInput Â
+		case "E": SendInput Ê
+		case "I": SendInput Î
+		case "O": SendInput Ô
+		case "U": SendInput Û
+		case "a": SendInput â
+		case "e": SendInput ê
+		case "i": SendInput î
+		case "o": SendInput ô
+		case "u": SendInput û
 	}
 return
 
@@ -124,18 +129,18 @@ return
 	Input, key, L1 T1
 	switch key
 	{
-		case "A": SendInput, {Asc 0196}
-		case "E": SendInput, {Asc 0203}
-		case "I": SendInput, {Asc 0207}
-		case "O": SendInput, {Asc 0214}
-		case "U": SendInput, {Asc 0220}
-		case "Y": SendInput, {Asc 0159}
-		case "a": SendInput, {Asc 0228}
-		case "e": SendInput, {Asc 0235}
-		case "i": SendInput, {Asc 0239}
-		case "o": SendInput, {Asc 0246}
-		case "u": SendInput, {Asc 0252}
-		case "y": SendInput, {Asc 0255}
+		case "A": SendInput Ä
+		case "E": SendInput Ë
+		case "I": SendInput Ï
+		case "O": SendInput Ö
+		case "U": SendInput Ü
+		case "Y": SendInput Ÿ
+		case "a": SendInput ä
+		case "e": SendInput ë
+		case "i": SendInput ï
+		case "o": SendInput ö
+		case "u": SendInput ï
+		case "y": SendInput ÿ
 	}
 return
 
@@ -144,14 +149,14 @@ return
 	Input, key, L1 T1
 	switch key
 	{
-		case "A": SendInput, {Asc 0195}
-		case "N": SendInput, {Asc 0209}
-		case "O": SendInput, {Asc 0213}
-		case "a": SendInput, {Asc 0227}
-		case "n": SendInput, {Asc 0241}
-		case "o": SendInput, {Asc 0245}
-		case "?": SendInput, {Asc 168}
-		case "!": SendInput, {Asc 173}
+		case "A": SendInput Ã
+		case "N": SendInput Ñ
+		case "O": SendInput Õ
+		case "a": SendInput ã
+		case "n": SendInput ñ
+		case "o": SendInput õ
+		case "?": SendInput ¿
+		case "!": SendInput ¡
 	}
 return
 
@@ -160,8 +165,8 @@ return
 	Input, key, L1 T1
 	switch key
 	{
-		case "C": SendInput, {Asc 0199}
-		case "c": SendInput, {Asc 0231}
+		case "C": SendInput Ç
+		case "c": SendInput ç
 	}
 return
 
@@ -170,8 +175,8 @@ return
 	Input, key, L1 T1
 	switch key
 	{
-		case "o": SendInput, {Asc 0248}
-		case "O": SendInput, {Asc 0216}
+		case "O": SendInput Ø
+		case "o": SendInput ø
 	}
 return
 
@@ -179,7 +184,7 @@ return
 ^3::
 	Input, key, L1 T1
 	if (key == "$")
-		SendInput {Asc 156}
+		SendInput £
 return
 
 #If
@@ -188,5 +193,5 @@ return
 ^=::
 	Input, key, L1 T1
 	if (key == "Y")
-		SendInput {Asc 190}
+		SendInput ¥
 return
