@@ -11,7 +11,7 @@
 ; ---
 
 AppName = Accentable
-Version = 1.00
+Version = 1.10
 
 ; ---
 
