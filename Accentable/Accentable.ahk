@@ -181,7 +181,7 @@ return
 return
 
 ; POUND SIGN
-^3::
+^+3::
 	Input, key, L1 T1
 	if (key == "$")
 		SendInput £
